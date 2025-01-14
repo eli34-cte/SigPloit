@@ -4,3 +4,4 @@ sudo apt update
 echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" | sudo tee -a /etc/apt/sources.list
 sudo apt update
 curl -s https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+pip2 install --index-url https://legacy.python.org/simple/ -r requirements.txt
