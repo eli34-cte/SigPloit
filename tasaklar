@@ -172,6 +172,7 @@ python3 /home/kali/path_to_your_script/your_script.py
     ^^^^^^^^^^^^^^^^^^^^
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 
-
-
-
+sudo airodump-ng --bssid [TARGET_BSSID] -c [CHANNEL] -w [OUTPUT_FILE] wlan0mon
+sudo airodump-ng wlan0mon
+sudo apt install aircrack-ng
+sudo apt update && sudo apt upgrade
