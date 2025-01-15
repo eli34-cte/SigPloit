@@ -100,7 +100,7 @@ error: subprocess-exited-with-error
 Successfully built IPy                                                                                             
 Failed to build pysctp
 ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (pysctp)
-raceback (most recent call last):
+Traceback (most recent call last):
   File "sigploit.py", line 16, in <module>
     from ss7.tracking import *
   File "/home/kali/SigPloit/ss7/tracking.py", line 14, in <module>
@@ -117,6 +117,8 @@ raceback (most recent call last):
     from configobj import ConfigObj, ConfigObjError
 ImportError: No module named configobj
 simdi ise boyle hata aldim ne yapapyim
+python2 -c "import configobj; print('ConfigObj is installed successfully!')"
+
 
 
 
