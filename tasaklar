@@ -176,3 +176,12 @@ sudo airodump-ng --bssid [TARGET_BSSID] -c [CHANNEL] -w [OUTPUT_FILE] wlan0mon
 sudo airodump-ng wlan0mon
 sudo apt install aircrack-ng
 sudo apt update && sudo apt upgrade
+l80211 not found.
+Interface wlan0mon: 
+ioctl(SIOCGIFINDEX) failed: No such device
+Failed initializing wireless card(s): wlan0mon
+l80211 not found.
+Interface wlan0mon: 
+ioctl(SIOCGIFINDEX) failed: No such device
+Failed initializing wireless card(s): wlan0mon
+                                                                                              
