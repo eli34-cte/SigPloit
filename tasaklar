@@ -83,3 +83,22 @@ hint: See PEP 668 for the detailed specification.
 EPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.                                                                          
 ERROR: Could not find a version that satisfies the requirement requirements.txt (from versions: none)
 ERROR: No matching distribution found for requirements.txt
+error: subprocess-exited-with-error
+  
+  × Building wheel for pysctp (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [5 lines of output]
+      _sctp.c:27:10: fatal error: netinet/sctp.h: No such file or directory
+         27 | #include <netinet/sctp.h>
+            |          ^~~~~~~~~~~~~~~~
+      compilation terminated.
+      error: command '/usr/bin/x86_64-linux-gnu-gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pysctp
+Successfully built IPy                                                                                             
+Failed to build pysctp
+ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (pysctp)
+
+
