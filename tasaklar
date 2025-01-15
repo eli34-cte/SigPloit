@@ -148,7 +148,22 @@ Traceback (most recent call last):
     from IPy import IP
 ImportError: No module named IPy
 
-
+lease upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.                                                                          
+Collecting IPy
+  Using cached IPy-1.01.tar.gz (33 kB)
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python2 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-IjOBqu/ipy/setup.py'"'"'; __file__='"'"'/tmp/pip-install-IjOBqu/ipy/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-dSM7yw                                                                
+         cwd: /tmp/pip-install-IjOBqu/ipy/                                                                         
+    Complete output (7 lines):                                                                                     
+    /usr/share/cffi-wheels/setuptools-44.1.0-py2.py3-none-any.whl/setuptools/dist.py:476: UserWarning: Normalizing '1.01' to '1.1'                                                                                                    
+    usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]                                          
+       or: setup.py --help [cmd1 cmd2 ...]                                                                         
+       or: setup.py --help-commands                                                                                
+       or: setup.py cmd --help                                                                                     
+                                                                                                                   
+    error: invalid command 'egg_info'                                                                              
+    ----------------------------------------                                                                       
+ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
 
 
 
