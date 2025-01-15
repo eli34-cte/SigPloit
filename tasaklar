@@ -73,7 +73,8 @@ Warning: Target Translations (non-free/i18n/Translation-en_US) is configured mul
 Warning: Target Translations (non-free/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
 Warning: Target Contents-deb (non-free/Contents-amd64) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
 Warning: Target Contents-deb (non-free/Contents-all) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
-
+sudo airmon-ng check kill
+sudo airmon-ng start wlan0
 
 note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
 hint: See PEP 668 for the detailed specification.
@@ -184,4 +185,9 @@ l80211 not found.
 Interface wlan0mon: 
 ioctl(SIOCGIFINDEX) failed: No such device
 Failed initializing wireless card(s): wlan0mon
-                                                                                              
+  sudo airmon-ng check kill
+sudo airmon-ng start wlan0                                                                                            
+sudo apt install broadcom-sta-dkms
+sudo modprobe wl
+sudo apt update
+sudo apt install firmware-atheros firmware-realtek
