@@ -165,6 +165,12 @@ Collecting IPy
     ----------------------------------------                                                                       
 ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
 python3 /home/kali/path_to_your_script/your_script.py
+/home/kali/SigPloit/sigploit.py:29: SyntaxWarning: invalid escape sequence '\|'
+  letterforms = '''\
+  File "/home/kali/SigPloit/sigploit.py", line 136
+    print table[c][row],
+    ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 
 
 
