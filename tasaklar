@@ -29,6 +29,51 @@ error: externally-managed-environment
     For more information, refer to the following:
     * https://www.kali.org/docs/general-use/python3-external-packages/
     * /usr/share/doc/python3.12/README.venv
+et:1 http://archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
+Hit:2 http://http.kali.org/kali kali-rolling InRelease 
+Err:1 http://archive.ubuntu.com/ubuntu bionic InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 3B4FE6ACC0B21F32
+Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (main/Contents-amd64) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (main/Contents-all) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (contrib/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (contrib/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (contrib/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (contrib/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (contrib/Contents-amd64) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (contrib/Contents-all) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (non-free/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (non-free/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (non-free/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (non-free/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (non-free/Contents-amd64) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (non-free/Contents-all) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: GPG error: http://archive.ubuntu.com/ubuntu bionic InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 3B4FE6ACC0B21F32
+Error: The repository 'http://archive.ubuntu.com/ubuntu bionic InRelease' is not signed.
+Notice: Updating from such a repository can't be done securely, and is therefore disabled by default.
+Notice: See apt-secure(8) manpage for repository creation and user configuration details.
+Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (main/Contents-amd64) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (main/Contents-all) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (contrib/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (contrib/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (contrib/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (contrib/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (contrib/Contents-amd64) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (contrib/Contents-all) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (non-free/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Packages (non-free/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (non-free/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Translations (non-free/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (non-free/Contents-amd64) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+Warning: Target Contents-deb (non-free/Contents-all) is configured multiple times in /etc/apt/sources.list:2 and /etc/apt/sources.list:7
+
 
 note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
 hint: See PEP 668 for the detailed specification.
