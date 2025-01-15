@@ -125,6 +125,30 @@ Collecting six
   Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
 Installing collected packages: six, configobj
 Successfully installed configobj-5.0.8 six-1.17.0
+Traceback (most recent call last):
+  File "sigploit.py", line 16, in <module>
+    from ss7.tracking import *
+  File "/home/kali/SigPloit/ss7/tracking.py", line 14, in <module>
+    import sigploit
+  File "/home/kali/SigPloit/sigploit.py", line 21, in <module>
+    from gtpmain import *
+  File "/home/kali/SigPloit/gtpmain.py", line 12, in <module>
+    import gtp.info
+  File "/home/kali/SigPloit/gtp/info.py", line 18, in <module>
+    from attacks.info import discover_gtp_nodes
+  File "/home/kali/SigPloit/gtp/attacks/info/discover_gtp_nodes.py", line 39, in <module>
+    from gtp_v2_core.utilities.configuration_parser import parseConfigs
+  File "/home/kali/SigPloit/gtp/gtp_v2_core/utilities/configuration_parser.py", line 40, in <module>
+    from gtp_v2_core.tunnel_mgmt_messages.create_bearer import CreateBearerRequest, CreateBearerResponse
+  File "/home/kali/SigPloit/gtp/gtp_v2_core/tunnel_mgmt_messages/create_bearer.py", line 34, in <module>
+    from gtp_v2_core.commons.gtp_v2_msg_base import GTPV2MessageBase
+  File "/home/kali/SigPloit/gtp/gtp_v2_core/commons/gtp_v2_msg_base.py", line 36, in <module>
+    from gtp_v2_information_element_base import *
+  File "/home/kali/SigPloit/gtp/gtp_v2_core/commons/gtp_v2_information_element_base.py", line 9, in <module>
+    from IPy import IP
+ImportError: No module named IPy
+
+
 
 
 
