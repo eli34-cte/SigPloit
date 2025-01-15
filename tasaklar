@@ -118,6 +118,13 @@ Traceback (most recent call last):
 ImportError: No module named configobj
 simdi ise boyle hata aldim ne yapapyim
 python2 -c "import configobj; print('ConfigObj is installed successfully!')"
+EPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+Collecting configobj
+  Downloading configobj-5.0.8-py2.py3-none-any.whl (36 kB)
+Collecting six
+  Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, configobj
+Successfully installed configobj-5.0.8 six-1.17.0
 
 
 
