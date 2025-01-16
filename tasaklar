@@ -198,4 +198,6 @@ cd Python-2.7.18
 make
 sudo make install
 wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 2
 
