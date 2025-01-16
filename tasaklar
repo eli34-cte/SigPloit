@@ -3,3 +3,4 @@ rror : HTTPSConnectionPool(host='auth.gojekapi.com', port=443): Max retries exce
 https://www.google.it/maps/place/40
 
 https://www.google.it/maps/place/40%C2%B022'32.1%22N+49%C2%B049'58.1%22E/@40.375472,49.8327741,356m/data=!3m1!1e3!4m4!3m3!8m2!3d40.3755885!4d49.8328009?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D
+v
