@@ -192,5 +192,10 @@ sudo modprobe wl
 sudo apt update
 sudo apt install firmware-atheros firmware-realtek
 sudo apt-get lksctp-tools python-dev build-essential libssl-dev libffi-dev libxml2-dev libxsltl-dev zliblg-dev
+tar xvf Python-2.7.18.tgz
+cd Python-2.7.18
+./configure
+make
+sudo make install
 
 
