@@ -2,3 +2,4 @@ tasaklar
 rror : HTTPSConnectionPool(host='auth.gojekapi.com', port=443): Max retries exceeded with url: /v2/customer/otp?phone_number=%2B994%20077%20330%203014 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fb0393e2780>: Failed to resolve 'auth.gojekapi.com' ([
 https://www.google.it/maps/place/40
 
+https://www.google.it/maps/place/40%C2%B022'32.1%22N+49%C2%B049'58.1%22E/@40.375472,49.8327741,356m/data=!3m1!1e3!4m4!3m3!8m2!3d40.3755885!4d49.8328009?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D
