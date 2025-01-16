@@ -228,5 +228,22 @@ Hint:
 WIARNING: Requirement './holehe-1.61.tar.gz' looks like a filename, but the file does not exist
 Processing ./holehe-1.61.tar.gz
 ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/home/kali/Application/H4X-Tools/holehe-1.61.tar.gzt looks like a path. File './holehe-1.61.tar.gaz' does not exist.
-
-
+equirement already satisfied: holehe in ./myenv/lib/python3.12/site-packages (1.61)
+Requirement already satisfied: termcolor in ./myenv/lib/python3.12/site-packages (from holehe) (2.5.0)
+Requirement already satisfied: bs4 in ./myenv/lib/python3.12/site-packages (from holehe) (0.0.2)
+Requirement already satisfied: httpx in ./myenv/lib/python3.12/site-packages (from holehe) (0.28.1)
+Requirement already satisfied: trio in ./myenv/lib/python3.12/site-packages (from holehe) (0.28.0)
+Requirement already satisfied: tqdm in ./myenv/lib/python3.12/site-packages (from holehe) (4.67.1)
+Requirement already satisfied: colorama in ./myenv/lib/python3.12/site-packages (from holehe) (0.4.6)
+Requirement already satisfied: beautifulsoup4 in ./myenv/lib/python3.12/site-packages (from bs4->holehe) (4.12.3)
+Requirement already satisfied: anyio in ./myenv/lib/python3.12/site-packages (from httpx->holehe) (4.8.0)
+Requirement already satisfied: certifi in ./myenv/lib/python3.12/site-packages (from httpx->holehe) (2024.12.14)
+Requirement already satisfied: httpcore==1.* in ./myenv/lib/python3.12/site-packages (from httpx->holehe) (1.0.7)
+Requirement already satisfied: idna in ./myenv/lib/python3.12/site-packages (from httpx->holehe) (3.10)
+Requirement already satisfied: h11<0.15,>=0.13 in ./myenv/lib/python3.12/site-packages (from httpcore==1.*->httpx->holehe) (0.14.0)
+Requirement already satisfied: attrs>=23.2.0 in ./myenv/lib/python3.12/site-packages (from trio->holehe) (24.3.0)
+Requirement already satisfied: sortedcontainers in ./myenv/lib/python3.12/site-packages (from trio->holehe) (2.4.0)
+Requirement already satisfied: outcome in ./myenv/lib/python3.12/site-packages (from trio->holehe) (1.3.0.post0)
+Requirement already satisfied: sniffio>=1.3.0 in ./myenv/lib/python3.12/site-packages (from trio->holehe) (1.3.1)
+Requirement already satisfied: typing_extensions>=4.5 in ./myenv/lib/python3.12/site-packages (from anyio->httpx->holehe) (4.12.2)
+Requirement already satisfied: soupsieve>1.2 in ./myenv/lib/python3.12/site-packages (from beautifulsoup4->bs4->holehe) (2
