@@ -224,4 +224,9 @@ Requirement already satisfied: soupsieve>1.2 in ./myenv/lib/python3.12/site-pack
 ERROR: Invalid requirement: './holehe-1.61.tar.gaz': Expected package name at the start of dependency specifier
     ./holehe-1.61.tar.gaz
     ^
-Hint: It looks like a path. File './holehe-1.61.tar.gaz' does not exist.
+Hint:
+WIARNING: Requirement './holehe-1.61.tar.gz' looks like a filename, but the file does not exist
+Processing ./holehe-1.61.tar.gz
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/home/kali/Application/H4X-Tools/holehe-1.61.tar.gzt looks like a path. File './holehe-1.61.tar.gaz' does not exist.
+
+
