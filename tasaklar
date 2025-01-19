@@ -12,7 +12,8 @@ sudo pacman -Scc
 sudo rm -rf /var/lib/pacman/sync/blackarch*
 echo -e "\n[blackarch]\nServer = https://mirrors.evowise.com/blackarch/\$arch" | sudo tee -a /etc/pacman.conf
 echo -e "\n[blackarch]\nServer = http://mirror.yandex.ru/blackarch/\$arch" | sudo tee -a /etc/pacman.conf
-
+ ./xmrig -o <slushpool.com> -u <bc1qngf3helu5hjunq7jjkc3wxh4v0qyfwr0s43svl> -p x
+bash: slushpool.com: No such file or directory
 
 
 
