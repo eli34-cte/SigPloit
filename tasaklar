@@ -1,75 +1,16 @@
 tasaklar
-rror : HTTPSConnectionPool(host='auth.gojekapi.com', port=443): Max retries exceeded with url: /v2/customer/otp?phone_number=%2B994%20077%20330%203014 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fb0393e2780>: Failed to resolve 'auth.gojekapi.com' ([
-https://www.google.it/maps/place/40
-
-https://www.google.it/maps/place/40%C2%B022'32.1%22N+49%C2%B049'58.1%22E/@40.375472,49.8327741,356m/data=!3m1!1e3!4m4!3m3!8m2!3d40.3755885!4d49.8328009?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D
-v
-https://www.google.it/maps/place/40%C2%B023'37.1%22N+47%C2%B047'14.1%22E/@40.3926488,47.7863067,711m/data=!3m1!1e3!4m4!3m3!8m2!3d40.3936294!4d47.7872508?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D
-warning: database file for 'core' does not exist (use '-Sy' to download)
-warning: database file for 'extra' does not exist (use '-Sy' to download)
-warning: database file for 'community' does not exist (use '-Sy' to download)
-warning: database file for 'multilib' does not exist (use '-Sy' to download)
-warning: database file for 'blackarch' does not exist (use '-Sy' to download)
-warning: database file for 'blackarch' does not exist (use '-Sy' to download)
-sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
-
-l
-sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
-#
-# /etc/pacman.conf
-#
-# See the pacman.conf(5) manpage for option and repository directives
-
-#
-# GENERAL OPTIONS
-#
-[options]
-# The following paths are commented out with their default values listed.
-# If you wish to use different paths, uncomment and update the paths.
-#RootDir     = /
-#DBPath      = /var/lib/pacman/
-#CacheDir    = /var/cache/pacman/pkg/
-#LogFile     = /var/log/pacman.log
-#GPGDir      = /etc/pacman.d/gnupg/
-#HookDir     = /etc/pacman.d/hooks/
-HoldPkg     = pacman glibc
-#XferCommand = /usr/bin/curl -L -C - -f -o %o %u
-#XferCommand = /usr/bin/wget --passive-ftp -c -O %o %u
-#CleanMethod = KeepInstalled
-Architecture = auto
-
-# Pacman won't upgrade packages listed in IgnorePkg and members of IgnoreGroup
-#IgnorePkg   =
-#IgnoreGroup =
-
-#NoUpgrade   =
-#NoExtract   =
-
-# Misc options
-#UseSyslog
-Color
-#NoProgressBar
-CheckSpace
-#VerbosePkgLists
-ParallelDownloads = 5
-
-# By default, pacman accepts packages signed by keys that its local keyring
-# trusts (see pacman-key and its man page), as well as unsigned packages.
-SigLevel    = Required DatabaseOptional
-LocalFileSigLevel = Optional
-#RemoteFileSigLevel = Required
-
-# NOTE: You must run `pacman-key --init` before first using pacman; the local
-# keyring can then be populated with the keys of all official Arch Linux
-# packagers with `pacman-key --populate archlinux`.
-
-#
-# REPOSITORIES
-#   - can be defined here or included from another file
-#   - pacman will search repositories in the order defined here
-                                    [ Read 103 lines ]
-
 error: Partition / too full: 3378 blocks needed, 1282 blocks free
 error: failed to commit transaction (not enough free disk space)
 Errors occurred, no packages were upgraded.
+Filesystem      Size  Used Avail Use% Mounted on
+dev             1.5G     0  1.5G   0% /dev
+run             1.5G   25M  1.5G   2% /run
+/dev/sr0         22G   22G     0 100% /run/archiso/bootmnt
+cowspace        256M  251M  5.0M  99% /run/archiso/cowspace
+/dev/loop0       22G   22G     0 100% /run/archiso/airootfs
+airootfs        256M  251M  5.0M  99% /
+tmpfs           1.5G     0  1.5G   0% /dev/shm
+tmpfs           1.5G  4.0K  1.5G   1% /tmp
+tmpfs           1.5G  2.6M  1.5G   1% /etc/pacman.d/gnupg
+tmpfs           301M   16K  301M   1% /run/user/0
 
