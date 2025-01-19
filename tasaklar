@@ -13,4 +13,10 @@ tmpfs           1.5G     0  1.5G   0% /dev/shm
 tmpfs           1.5G  4.0K  1.5G   1% /tmp
 tmpfs           1.5G  2.6M  1.5G   1% /etc/pacman.d/gnupg
 tmpfs           301M   16K  301M   1% /run/user/0
-
+warning: database file for 'core' does not exist (use '-Sy' to download)
+warning: database file for 'extra' does not exist (use '-Sy' to download)
+warning: database file for 'community' does not exist (use '-Sy' to download)
+warning: database file for 'multilib' does not exist (use '-Sy' to download)
+warning: database file for 'blackarch' does not exist (use '-Sy' to download)
+error: target not found: lightdm
+error: target not found: lightdm-gtk-greeter
