@@ -68,3 +68,8 @@ LocalFileSigLevel = Optional
 #   - can be defined here or included from another file
 #   - pacman will search repositories in the order defined here
                                     [ Read 103 lines ]
+
+error: Partition / too full: 3378 blocks needed, 1282 blocks free
+error: failed to commit transaction (not enough free disk space)
+Errors occurred, no packages were upgraded.
+
