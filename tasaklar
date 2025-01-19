@@ -7,3 +7,15 @@ error: could not register 'backarch' database (database already registered)
 error: could not register 'backarch' database (database already registered)
 warning: database file for 'blackarch' does not exist (use '-Sy' to download)
 error: failed to prepare transaction (could not find database
+sudo sed -i '/\[blackarch\]/,+1d' /etc/pacman.conf
+sudo pacman -Scc
+sudo rm -rf /var/lib/pacman/sync/blackarch*
+echo -e "\n[blackarch]\nServer = https://mirrors.evowise.com/blackarch/\$arch" | sudo tee -a /etc/pacman.conf
+echo -e "\n[blackarch]\nServer = http://mirror.yandex.ru/blackarch/\$arch" | sudo tee -a /etc/pacman.conf
+
+
+
+
+
+
+
