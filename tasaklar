@@ -1,8 +1,4 @@
 tasaklar
- 
-warning: database file for 'core' does not exist (use '-Sy' to download)
-warning: database file for 'extra' does not exist (use '-Sy' to download)
-warning: database file for 'community' does not exist (use '-Sy' to download)
-warning: database file for 'multilib' does not exist (use '-Sy' to download)
-warning: database file for 'blackarch' does not exist (use '-Sy' to download)
-error: target not found: phoneinfoga
+
+error: failed retrieving file 'blackarch.db' from ftp.halifax.rwth-aachen.de : SSL connection timeout
+error: failed to synchronize all databases (download library error)
