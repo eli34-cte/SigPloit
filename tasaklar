@@ -15,7 +15,8 @@ tasaklar
  * CUDA         disabled
 [2025-01-20 06:33:31.169]  net      stratum+tcp://xmr.pool.minergate.com:3334 49.12.80.38 connect error: "connection refused"
 [2025-01-20 06:33:38.964]  net      stratum+tcp://xmr.pool.minergate.com:3334 49.12.80.40 connect error: "connection refused"
-
+tar: v: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
 
 
 
