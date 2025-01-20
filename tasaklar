@@ -1,52 +1,8 @@
 tasaklar
- * ABOUT        XMRig/6.22.2 gcc/12.2.1 (built for Linux x86-64, 64 bit)
- * LIBS         libuv/1.44.2 OpenSSL/3.0.8 hwloc/2.9.0
- * HUGE PAGES   supported
- * 1GB PAGES    unavailable
- * CPU          12th Gen Intel(R) Core(TM) i7-1255U (1) 64-bit AES VM
-                L2:5.0 MB L3:48.0 MB 4C/4T NUMA:1
- * MEMORY       1.4/2.9 GB (49%)
- * MOTHERBOARD  innotek GmbH - VirtualBox
- * DONATE       1%
- * ASSEMBLY     auto:intel
- * POOL #1      stratum+tcp://xmr.pool.minergate.com:3334 coin Monero
- * COMMANDS     hashrate, pause, resume, results, connection
- * OPENCL       disabled
- * CUDA         disabled
-[2025-01-20 06:33:31.169]  net      stratum+tcp://xmr.pool.minergate.com:3334 49.12.80.38 connect error: "connection refused"
-[2025-01-20 06:33:38.964]  net      stratum+tcp://xmr.pool.minergate.com:3334 49.12.80.40 connect error: "connection refused"
-tar: v: Cannot open: No such file or directory
-tar: Error is not recoverable: exiting now
-
-xmrig-6.22.2/
-xmrig-6.22.2/SHA256SUMS
-xmrig-6.22.2/xmrig
-xmrig-6.22.2/config.json
-4735SovzFTM5BMzmKUMA4NLR6jN8DTTpGipqr8FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6
-FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6 -p x --coin monero
- * ABOUT        XMRig/6.22.2 gcc/9.4.0 (built for Linux x86-64, 64 bit)
- * LIBS         libuv/1.49.2 OpenSSL/3.0.15 hwloc/2.11.2
- * HUGE PAGES   supported
- * 1GB PAGES    unavailable
- * CPU          12th Gen Intel(R) Core(TM) i7-1255U (1) 64-bit AES VM
-                L2:5.0 MB L3:48.0 MB 4C/4T NUMA:1
- * MEMORY       1.4/2.9 GB (47%)
- * MOTHERBOARD  innotek GmbH - VirtualBox
- * DONATE       1%
- * ASSEMBLY     auto:intel
- * POOL #1      donate.v2.xmrig.com:3333 algo auto
- * COMMANDS     hashrate, pause, resume, results, connection
-[2025-01-20 08:56:11.392]  config   configuration saved to: "/root/xmrig-6.22.2/config.json"
- * OPENCL       disabled
- * CUDA         disabled
-[2025-01-20 08:56:11.650]  net      use pool donate.v2.xmrig.com:3333  178.128.242.134
-[2025-01-20 08:56:11.650]  net      new job from donate.v2.xmrig.com:3333 diff 1000K algo rx/0 height 3329315 (11 tx)
-[2025-01-20 08:56:11.650]  cpu      use argon2 implementation AVX2
-[2025-01-20 08:56:11.651]  msr      register values for "intel" preset have been set successfully (1 ms)
-[2025-01-20 08:56:11.651]  randomx  init dataset algo rx/0 (4 threads) seed 8016fbcab355f742...
-[2025-01-20 08:56:11.661]  randomx  allocated 2336 MB (2080+256) huge pages 0% 0/1168 +JIT (9 ms)
-[2025-01-20 08:56:24.483]  net      new job from donate.v2.xmrig.com:3333 diff 1000K algo rx/0 height 3329315 (19 tx)
-Killed
-
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.45/images/create?fromImage=sundowndev%2Fphoneinfoga&tag=latest": dial unix /var/run/docker.sock: connect: permission
-file:///G:/IMG_20240211_120009_252.jpg
+ 
+warning: database file for 'core' does not exist (use '-Sy' to download)
+warning: database file for 'extra' does not exist (use '-Sy' to download)
+warning: database file for 'community' does not exist (use '-Sy' to download)
+warning: database file for 'multilib' does not exist (use '-Sy' to download)
+warning: database file for 'blackarch' does not exist (use '-Sy' to download)
+error: target not found: phoneinfoga
