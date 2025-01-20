@@ -48,4 +48,4 @@ FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6 -p x --coin monero
 [2025-01-20 08:56:24.483]  net      new job from donate.v2.xmrig.com:3333 diff 1000K algo rx/0 height 3329315 (19 tx)
 Killed
 
-
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.45/images/create?fromImage=sundowndev%2Fphoneinfoga&tag=latest": dial unix /var/run/docker.sock: connect: permission
