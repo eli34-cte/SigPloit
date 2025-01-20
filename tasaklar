@@ -15,7 +15,25 @@ echo -e "\n[blackarch]\nServer = http://mirror.yandex.ru/blackarch/\$arch" | sud
  ./xmrig -o <slushpool.com> -u <bc1qngf3helu5hjunq7jjkc3wxh4v0qyfwr0s43svl> -p x
 bash: slushpool.com: No such file or directory
 ./xmrig -o stratum+tcp://eu.stratum.slushpool.com:3333 -u bc1qngf3helu5hjunq7jjkc3wxh4v0qyfwr0s43svl -p x
-
+* ABOUT        XMRig/6.22.2 gcc/12.2.1 (built for Linux x86-64, 64 bit)
+ * LIBS         libuv/1.44.2 OpenSSL/3.0.8 hwloc/2.9.0
+ * HUGE PAGES   supported
+ * 1GB PAGES    unavailable
+ * CPU          12th Gen Intel(R) Core(TM) i7-1255U (1) 64-bit AES VM
+                L2:5.0 MB L3:48.0 MB 4C/4T NUMA:1
+ * MEMORY       1.4/2.9 GB (48%)
+ * MOTHERBOARD  innotek GmbH - VirtualBox
+ * DONATE       1%
+ * ASSEMBLY     auto:intel
+ * POOL #1      stratum+tcp://eu.stratum.slushpool.com:3333 algo auto
+ * COMMANDS     hashrate, pause, resume, results, connection
+ * OPENCL       disabled
+ * CUDA         disabled
+[2025-01-20 06:09:37.659]  net      stratum+tcp://eu.stratum.slushpool.com:3333 read error: "end of file"
+[2025-01-20 06:09:43.101]  net      stratum+tcp://eu.stratum.slushpool.com:3333 read error: "end of file"
+[2025-01-20 06:09:48.588]  net      stratum+tcp://eu.stratum.slushpool.com:3333 read error: "end of file"
+[2025-01-20 06:09:54.969]  net      stratum+tcp://eu.stratum.slushpool.com:3333 read error: "end of file"
+[2025-01-20 06:10:01.116]  net      stratum+tcp://eu.stratum.slushpool.com:3333 read error: "end of file"
 
 
 
