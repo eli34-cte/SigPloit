@@ -18,6 +18,10 @@ tasaklar
 tar: v: Cannot open: No such file or directory
 tar: Error is not recoverable: exiting now
 
+xmrig-6.22.2/
+xmrig-6.22.2/SHA256SUMS
+xmrig-6.22.2/xmrig
+xmrig-6.22.2/config.json
 
 
 
