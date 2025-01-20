@@ -1,2 +1,4 @@
 tasaklar
 curl -O https://blackarch.org/strap.sh
+database file for 'blackarch' does not exist (use '-Sy' to download)
+error: failed to prepare transaction (could not find database
