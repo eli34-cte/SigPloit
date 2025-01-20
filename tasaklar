@@ -17,4 +17,6 @@ error: failed retrieving file 'blackarch.db' from ftp.halifax.rwth-aachen.de : C
 sudo reflector --country 'Germany' --latest 5 --sort rate --save /etc/pacman.d/blackarch-mirrorlist
 
 Server = https://mirror.rackspace.com/blackarch/$repo/os/$arch
-
+error: failed retrieving file 'blackarch.db' from mirror.rackspace.com : The requested URL returned error: 404
+error: failed retrieving file 'blackarch.db' from ftp.halifax.rwth-aachen.de : SSL connection timeout
+error: failed to synchronize all databases (download library error)
