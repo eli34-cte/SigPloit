@@ -2,3 +2,5 @@ tasaklar
 
 error: failed retrieving file 'blackarch.db' from ftp.halifax.rwth-aachen.de : SSL connection timeout
 error: failed to synchronize all databases (download library error)
+error: failed retrieving file 'blackarch.db' from ftp.halifax.rwth-aachen.de : SSL connection timeout
+error: failed to synchronize all databases (unexpected error)
