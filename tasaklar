@@ -1,3 +1,5 @@
 tasaklar
 warning: database file for 'blackarch' does not exist (use '-Sy' to download)
 error: failed to prepare transaction (could not find database)
+echo 8f2d6503d3c33551b35d6cd98ecfbf1ab320f9b0 strap.sh | sha1sum -c
+curl -O https://blackarch.org/strap.sh
