@@ -1,14 +1,2 @@
 tasaklar
-curl -O https://blackarch.org/blackarch-mirrorlist
-sudo mv blackarch-mirrorlist /etc/pacman.d/
-Mirrorlist'i yapılandırmak:
-bash
-Copy
-Edit
-sudo nano /etc/pacman.d/blackarch-mirrorlist
-Aşağıdaki gibi çalışan bir sunucuyu en üste ekle (örneğin, https ile başlayan bir mirror):
-
-plaintext
-Copy
-Edit
-Server = https://mirror.clarkson.edu/blackarch/$repo/os/$arch
+curl -O https://blackarch.org/strap.sh
