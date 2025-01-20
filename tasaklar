@@ -4,3 +4,5 @@ error: failed retrieving file 'blackarch.db' from ftp.halifax.rwth-aachen.de : S
 error: failed to synchronize all databases (download library error)
 error: failed retrieving file 'blackarch.db' from ftp.halifax.rwth-aachen.de : SSL connection timeout
 error: failed to synchronize all databases (unexpected error)
+warning: database file for 'blackarch' does not exist (use '-Sy' to download)
+error: failed to prepare transaction (could not find database)
