@@ -5,3 +5,8 @@ echo 8f2d6503d3c33551b35d6cd98ecfbf1ab320f9b0 strap.sh | sha1sum -c
 curl -O https://blackarch.org/strap.sh
 [blackarch]
 Server = https://mirror.blackarch.org/$repo/os/$arch
+error: failed retrieving file 'blackarch.db' from mirror.rackspace.com : The requested URL returned error: 404
+error: failed retrieving file 'blackarch.db' from ftp.halifax.rwth-aachen.de : SSL connection timeout
+error: failed retrieving file 'blackarch.db' from mirror.blackarch.org : Could not resolve host: mirror.blackarch.org
+warning: too many errors from mirror.blackarch.org, skipping for the remainder of this transaction
+error: failed to synchronize all databases (unexpected error)
