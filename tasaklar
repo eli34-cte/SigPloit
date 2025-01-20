@@ -14,4 +14,7 @@ error: failed retrieving file 'community.db' from mirror.rackspace.com : Could n
 error: failed retrieving file 'core.db' from mirror.rackspace.com : Could not resolve host: mirror.rackspace.com
 error: failed retrieving file 'multilib.db' from mirror.rackspace.com : Could not resolve host: mirror.rackspace.com
 error: failed retrieving file 'blackarch.db' from ftp.halifax.rwth-aachen.de : Could not resolve host: ftp.halifax.rwt
+sudo reflector --country 'Germany' --latest 5 --sort rate --save /etc/pacman.d/blackarch-mirrorlist
+
+Server = https://mirror.rackspace.com/blackarch/$repo/os/$arch
 
