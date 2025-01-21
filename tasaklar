@@ -3,4 +3,4 @@ tasaklar
 git clone https://github.com/xmrig/xmrig.git
 sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
 4735SovzFTM5BMzmKUMA4NLR6jN8DTTpGipqr8FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6
-
+pool.supportxmr.com:443
