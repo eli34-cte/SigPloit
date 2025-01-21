@@ -1,41 +1,42 @@
 tasaklar
-./xmrig -o stratum+tcp://pool.supportxmr.com:3333 -u 4735SovzFTM5BMzmKUMA4NLR6jN8DTTpGipqr8FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6 -p x
+sudo sysctl -w vm.nr_hugepages=128
 
-tasaklar
-./xmrig -o stratum+tcp://pool.supportxmr.com:3333 -u 4735SovzFTM5BMzmKUMA4NLR6jN8DTTpGipqr8FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6 -p x
+vm.nr_hugepages=128
+Ardından ayarları yeniden yüklemek için:
 
-tasaklar
-./xmrig -o stratum+tcp://pool.supportxmr.com:3333 -u 4735SovzFTM5BMzmKUMA4NLR6jN8DTTpGipqr8FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6 -p x
- * HUGE PAGES   supported
- * 1GB PAGES    unavailable
- * CPU          12th Gen Intel(R) Core(TM) i7-1255U (1) 64-bit AES VM
-                L2:8.0 MB L3:48.0 MB 4C/4T NUMA:1
- * MEMORY       0.7/3.6 GB (20%)
- * DONATE       1%
- * ASSEMBLY     auto:intel
- * POOL #1      stratum+tcp://pool.supportxmr.com:3333 algo auto
- * COMMANDS     hashrate, pause, resume, results, connection
- * OPENCL       disabled
- * CUDA         disabled
-[2025-01-21 01:02:52.783]  net      use pool pool.supportxmr.com:3333  141.95.72.61
-[2025-01-21 01:02:52.783]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329989 (57 tx)
-[2025-01-21 01:02:52.786]  cpu      use argon2 implementation AVX2
-[2025-01-21 01:02:52.812]  msr      msr kernel module is not available
-[2025-01-21 01:02:52.812]  msr      FAILED TO APPLY MSR MOD, HASHRATE WILL BE LOW
-[2025-01-21 01:02:52.812]  randomx  init dataset algo rx/0 (4 threads) seed 8016fbcab355f742...
-[2025-01-21 01:02:52.813]  randomx  allocated 2336 MB (2080+256) huge pages 0% 0/1168 +JIT (1 ms)
-[2025-01-21 01:02:58.820]  randomx  dataset ready (6007 ms)
-[2025-01-21 01:02:58.821]  cpu      use profile  rx  (4 threads) scratchpad 2048 KB
-[2025-01-21 01:02:58.823]  cpu      READY threads 4/4 (4) huge pages 0% 0/4 memory 8192 KB (2 ms)
-[2025-01-21 01:02:59.717]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329989 (58 tx)
-[2025-01-21 01:03:09.717]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329989 (59 tx)
-[2025-01-21 01:03:19.813]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329989 (67 tx)
-[2025-01-21 01:03:24.411]  cpu      accepted (1/0) diff 50000 (115 ms)
-[2025-01-21 01:03:30.107]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329989 (68 tx)
-[2025-01-21 01:03:35.663]  net      new job from pool.supportxmr.com:3333 diff 53550 algo rx/0 height 3329989 (68 tx)
-[2025-01-21 01:03:40.261]  net      new job from pool.supportxmr.com:3333 diff 53550 algo rx/0 height 3329989 (75 tx)
-ht 3329989 (75 tx)
-[2025-01-21 01:03:58.898]  miner    speed 10s/60s/15m 1072.0 n/a n/a H/s max 1349.6 H/s
-[2025-01-21 01:04:58.981]  miner    speed 10s/60s/15m 1424.0 1227.6 n/a H/s max 1424.0 H/s
+sudo sysctl -p
+Sonuç Kontrolü:
+cat /proc/meminfo | grep HugePages
+Eğer HugePages_Total ve HugePages_Free ayarlarının değerleri doluysa Huge Pages etkinleştirilmiştir.
 
+2. MSR Modülünü Yükleyin
+MSR (Model Specific Register), işlemci ayarlarını optimize eder. XMRig, MSR olmadan performans kaybı yaşayabilir.
 
+Adımlar:
+MSR modülünü etkinleştirin:
+sudo modprobe msr
+Eğer hâlâ hata alıyorsanız, çekirdek modülünü manuel olarak yükleyin:
+sudo apt install msr-tools
+Kalıcı Yapılandırma:
+MSR modülünü her yeniden başlatmada otomatik olarak yüklemek için:
+
+echo "msr" | sudo tee -a /etc/modules
+3. XMRig Ayarlarını Optimize Edin
+Thread Sayısı: CPU çekirdek sayınızın yarısı kadar thread ayarlayın. Daha fazla thread kullanmak performansı düşürebilir.
+
+./xmrig --threads=<çekirdek_sayısı>
+Örneğin, 8 çekirdekli bir CPU için:
+
+./xmrig --threads=4
+Bağlantı Algoritması: En uygun algoritmayı otomatik seçmek için:
+
+./xmrig --algo=rx/0
+Priority ve CPU Affinity Ayarları: Madencilik programının CPU üzerindeki önceliğini artırabilirsiniz:
+
+nice -n -20 ./xmrig
+4. İşlemci Performansını Yükseltin
+CPU Turbo Boost’u Açın: Turbo Boost'u kontrol etmek için BIOS'a gidin ve Turbo Boost seçeneğini etkinleştirin.
+
+Performans Modunu Ayarla: İşlemci güç yönetimini "Performance Mode" olarak ayarlayın:
+
+sudo cpupower frequency-set -g performance
