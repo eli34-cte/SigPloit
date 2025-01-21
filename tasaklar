@@ -4,3 +4,39 @@ git clone https://github.com/xmrig/xmrig.git
 sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
 4735SovzFTM5BMzmKUMA4NLR6jN8DTTpGipqr8FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6
 pool.supportxmr.com:443
+./xmrig -ostratum+tcp://eu.btc.minegrate.com:3333 -u 4735SovzFTM5BMzmKUMA4NLR6jN8DTTpGipqr8FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6 -p x
+ * ABOUT        XMRig/6.22.2 gcc/14.2.0 (built for Linux x86-64, 64 bit)
+ * LIBS         libuv/1.48.0 OpenSSL/3.3.2 hwloc/2.11.2
+ * HUGE PAGES   supported
+ * 1GB PAGES    unavailable
+ * CPU          12th Gen Intel(R) Core(TM) i7-1255U (1) 64-bit AES VM
+                L2:8.0 MB L3:48.0 MB 4C/4T NUMA:1
+ * MEMORY       1.3/3.6 GB (37%)
+ * DONATE       1%
+ * ASSEMBLY     auto:intel
+ * POOL #1      stratum+tcp://eu.btc.minegrate.com:3333 algo auto
+ * COMMANDS     hashrate, pause, resume, results, connection
+ * OPENCL       disabled
+ * CUDA         disabled
+[2025-01-21 00:55:29.449]  net      stratum+tcp://eu.btc.minegrate.com:3333 DNS error: "unknown node or service"                                          
+[2025-01-21 00:55:35.312]  net      stratum+tcp://eu.btc.minegrate.com:3333 DNS error: "unknown node or service"                                          
+[2025-01-21 00:55:41.321]  net      stratum+tcp://eu.btc.minegrate.com:3333 DNS error: "unknown node or service"                                          
+[2025-01-21 00:55:44.032]  signal   Ctrl+C received, exiting
+./xmrig -ostratum+tcp://eu.btc.minegrate.com:3333 -u 4735SovzFTM5BMzmKUMA4NLR6jN8DTTpGipqr8FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6 -p x
+ * ABOUT        XMRig/6.22.2 gcc/14.2.0 (built for Linux x86-64, 64 bit)
+ * LIBS         libuv/1.48.0 OpenSSL/3.3.2 hwloc/2.11.2
+ * HUGE PAGES   supported
+ * 1GB PAGES    unavailable
+ * CPU          12th Gen Intel(R) Core(TM) i7-1255U (1) 64-bit AES VM
+                L2:8.0 MB L3:48.0 MB 4C/4T NUMA:1
+ * MEMORY       1.3/3.6 GB (37%)
+ * DONATE       1%
+ * ASSEMBLY     auto:intel
+ * POOL #1      stratum+tcp://eu.btc.minegrate.com:3333 algo auto
+ * COMMANDS     hashrate, pause, resume, results, connection
+ * OPENCL       disabled
+ * CUDA         disabled
+[2025-01-21 00:55:29.449]  net      stratum+tcp://eu.btc.minegrate.com:3333 DNS error: "unknown node or service"                                          
+[2025-01-21 00:55:35.312]  net      stratum+tcp://eu.btc.minegrate.com:3333 DNS error: "unknown node or service"                                          
+[2025-01-21 00:55:41.321]  net      stratum+tcp://eu.btc.minegrate.com:3333 DNS error: "unknown node or service"                                          
+[2025-01-21 00:55:44.032]  signal   Ctrl+C received, exiting
