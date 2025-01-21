@@ -1,35 +1,62 @@
 tasaklar
- * ABOUT        XMRig/6.22.2 gcc/14.2.0 (built for Linux x86-64, 64 bit)
- * LIBS         libuv/1.48.0 OpenSSL/3.3.2 hwloc/2.11.2
- * HUGE PAGES   supported
- * 1GB PAGES    unavailable
- * CPU          12th Gen Intel(R) Core(TM) i7-1255U (1) 64-bit AES VM
-                L2:8.0 MB L3:48.0 MB 4C/4T NUMA:1
- * MEMORY       1.2/3.6 GB (33%)
- * DONATE       1%
- * ASSEMBLY     auto:intel
- * POOL #1      stratum+tcp://pool.supportxmr.com:3333 algo auto
- * COMMANDS     hashrate, pause, resume, results, connection
- * OPENCL       disabled
- * CUDA         disabled
-[2025-01-21 01:17:53.955]  net      use pool pool.supportxmr.com:3333  141.95.72.61
-[2025-01-21 01:17:53.956]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329996 (102 tx)
-[2025-01-21 01:17:53.956]  cpu      use argon2 implementation AVX2
-[2025-01-21 01:17:53.965]  msr      cannot read MSR 0x000001a4
-[2025-01-21 01:17:53.965]  msr      FAILED TO APPLY MSR MOD, HASHRATE WILL BE LOW
-[2025-01-21 01:17:53.965]  randomx  init dataset algo rx/0 (4 threads) seed 8016fbcab355f742...
-[2025-01-21 01:17:53.994]  randomx  allocated 2336 MB (2080+256) huge pages 11% 128/1168 +JIT (28 ms)
-[2025-01-21 01:17:59.994]  randomx  dataset ready (6000 ms)
-[2025-01-21 01:17:59.994]  cpu      use profile  rx  (4 threads) scratchpad 2048 KB
-[2025-01-21 01:17:59.997]  cpu      READY threads 4/4 (4) huge pages 0% 0/4 memory 8192 KB (3 ms)
-[2025-01-21 01:18:13.477]  cpu      accepted (1/0) diff 50000 (135 ms)
-[2025-01-21 01:18:34.104]  net      new job from pool.supportxmr.com:3333 diff 56250 algo rx/0 height 3329996 (102 tx)
-[2025-01-21 01:18:39.520]  cpu      accepted (2/0) diff 56250 (119 ms)
-[2025-01-21 01:19:00.066]  miner    speed 10s/60s/15m 1364.7 n/a n/a H/s max 1459.6 H/s
-[2025-01-21 01:19:23.794]  net      stratum+tcp://pool.supportxmr.com:3333 read error: "connection reset by peer"
-[2025-01-21 01:19:23.794]  net      no active pools, stop mining
-[2025-01-21 01:19:29.988]  net      use pool pool.supportxmr.com:3333  141.95.72.59
-[2025-01-21 01:19:29.988]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (38 tx)
-[2025-01-21 01:19:36.957]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (39 tx)
-
-
+[2025-01-21 01:19:47.158]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (42 tx)
+[2025-01-21 01:19:55.284]  cpu      accepted (3/0) diff 50000 (123 ms)
+[2025-01-21 01:19:57.191]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (46 tx)
+[2025-01-21 01:20:00.139]  miner    speed 10s/60s/15m 1309.6 1185.6 n/a H/s max 1459.6 H/s
+[2025-01-21 01:20:04.007]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (47 tx)
+[2025-01-21 01:20:07.255]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (50 tx)
+[2025-01-21 01:20:17.279]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (56 tx)
+[2025-01-21 01:20:27.440]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (57 tx)
+[2025-01-21 01:20:29.167]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (57 tx)
+[2025-01-21 01:20:37.536]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (63 tx)
+[2025-01-21 01:20:38.574]  cpu      accepted (4/0) diff 50000 (142 ms)
+[2025-01-21 01:20:47.657]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (64 tx)
+[2025-01-21 01:20:57.830]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (67 tx)
+[2025-01-21 01:21:00.210]  miner    speed 10s/60s/15m 1206.0 1114.4 n/a H/s max 1459.6 H/s
+[2025-01-21 01:21:07.840]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (72 tx)
+[2025-01-21 01:21:17.997]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (74 tx)
+[2025-01-21 01:21:28.255]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (75 tx)
+[2025-01-21 01:21:29.276]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (75 tx)
+[2025-01-21 01:21:38.307]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (79 tx)
+[2025-01-21 01:21:48.501]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (83 tx)
+[2025-01-21 01:21:54.094]  cpu      accepted (5/0) diff 50000 (121 ms)
+[2025-01-21 01:21:59.407]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (84 tx)
+[2025-01-21 01:22:00.260]  miner    speed 10s/60s/15m 1331.8 1282.0 n/a H/s max 1459.6 H/s
+[2025-01-21 01:22:09.528]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (87 tx)
+[2025-01-21 01:22:15.512]  cpu      accepted (6/0) diff 50000 (138 ms)
+[2025-01-21 01:22:20.415]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (88 tx)
+[2025-01-21 01:22:29.394]  net      new job from pool.supportxmr.com:3333 diff 50265 algo rx/0 height 3329997 (88 tx)
+[2025-01-21 01:22:30.458]  net      new job from pool.supportxmr.com:3333 diff 50265 algo rx/0 height 3329997 (90 tx)
+[2025-01-21 01:22:48.474]  net      new job from pool.supportxmr.com:3333 diff 50265 algo rx/0 height 3329997 (91 tx)
+[2025-01-21 01:22:58.525]  net      new job from pool.supportxmr.com:3333 diff 50265 algo rx/0 height 3329997 (94 tx)
+[2025-01-21 01:23:00.322]  miner    speed 10s/60s/15m 1383.7 1313.7 n/a H/s max 1459.6 H/s
+[2025-01-21 01:23:08.683]  net      new job from pool.supportxmr.com:3333 diff 50265 algo rx/0 height 3329997 (102 tx)
+[2025-01-21 01:23:16.138]  cpu      accepted (7/0) diff 50265 (136 ms)
+[2025-01-21 01:23:17.102]  cpu      accepted (8/0) diff 50265 (96 ms)
+[2025-01-21 01:23:18.899]  net      new job from pool.supportxmr.com:3333 diff 50265 algo rx/0 height 3329997 (105 tx)
+[2025-01-21 01:23:29.196]  net      new job from pool.supportxmr.com:3333 diff 50265 algo rx/0 height 3329997 (106 tx)
+[2025-01-21 01:23:29.483]  net      new job from pool.supportxmr.com:3333 diff 56565 algo rx/0 height 3329997 (106 tx)
+[2025-01-21 01:23:39.587]  net      new job from pool.supportxmr.com:3333 diff 56565 algo rx/0 height 3329997 (107 tx)
+[2025-01-21 01:23:41.257]  cpu      accepted (9/0) diff 56565 (123 ms)
+[2025-01-21 01:23:44.931]  net      new job from pool.supportxmr.com:3333 diff 56565 algo rx/0 height 3329998 (74 tx)
+[2025-01-21 01:23:55.219]  net      new job from pool.supportxmr.com:3333 diff 56565 algo rx/0 height 3329998 (75 tx)
+[2025-01-21 01:23:56.166]  net      new job from pool.supportxmr.com:3333 diff 56565 algo rx/0 height 3329999 (1 tx)
+[2025-01-21 01:24:00.376]  miner    speed 10s/60s/15m 1336.9 1319.1 n/a H/s max 1459.6 H/s
+[2025-01-21 01:24:06.468]  net      new job from pool.supportxmr.com:3333 diff 56565 algo rx/0 height 3329999 (4 tx)
+[2025-01-21 01:24:16.757]  net      new job from pool.supportxmr.com:3333 diff 56565 algo rx/0 height 3329999 (7 tx)
+[2025-01-21 01:24:26.755]  net      new job from pool.supportxmr.com:3333 diff 56565 algo rx/0 height 3329999 (12 tx)
+[2025-01-21 01:24:29.573]  net      new job from pool.supportxmr.com:3333 diff 53730 algo rx/0 height 3329999 (12 tx)
+[2025-01-21 01:24:30.075]  cpu      accepted (10/0) diff 53730 (130 ms)
+[2025-01-21 01:24:32.156]  cpu      accepted (11/0) diff 53730 (114 ms)
+[2025-01-21 01:24:37.015]  net      new job from pool.supportxmr.com:3333 diff 53730 algo rx/0 height 3329999 (15 tx)
+[2025-01-21 01:24:47.256]  net      new job from pool.supportxmr.com:3333 diff 53730 algo rx/0 height 3329999 (16 tx)
+[2025-01-21 01:24:57.524]  net      new job from pool.supportxmr.com:3333 diff 53730 algo rx/0 height 3329999 (18 tx)
+[2025-01-21 01:25:00.434]  miner    speed 10s/60s/15m 1132.1 1311.8 n/a H/s max 1459.6 H/s
+[2025-01-21 01:25:03.836]  net      new job from pool.supportxmr.com:3333 diff 53730 algo rx/0 height 3329999 (21 tx)
+[2025-01-21 01:25:07.554]  net      new job from pool.supportxmr.com:3333 diff 53730 algo rx/0 height 3329999 (23 tx)
+[2025-01-21 01:25:18.959]  net      new job from pool.supportxmr.com:3333 diff 53730 algo rx/0 height 3329999 (24 tx)
+[2025-01-21 01:25:29.110]  net      new job from pool.supportxmr.com:3333 diff 53730 algo rx/0 height 3329999 (26 tx)
+[2025-01-21 01:25:29.638]  net      new job from pool.supportxmr.com:3333 diff 58230 algo rx/0 height 3329999 (26 tx)
+[2025-01-21 01:25:39.118]  net      new job from pool.supportxmr.com:3333 diff 58230 algo rx/0 height 3329999 (31 tx)
+[2025-01-21 01:25:40.623]  net      new job from pool.supportxmr.com:3333 diff 58230 algo rx/0 height 3330000 (8 tx)
+[2025-01-21 01:25:50.731]  net      new job from pool.supportxmr.com:3333 diff 58230 algo rx/0 height 3330000 (9 tx
