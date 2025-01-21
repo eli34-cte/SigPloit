@@ -1,42 +1,35 @@
 tasaklar
-sudo sysctl -w vm.nr_hugepages=128
+ * ABOUT        XMRig/6.22.2 gcc/14.2.0 (built for Linux x86-64, 64 bit)
+ * LIBS         libuv/1.48.0 OpenSSL/3.3.2 hwloc/2.11.2
+ * HUGE PAGES   supported
+ * 1GB PAGES    unavailable
+ * CPU          12th Gen Intel(R) Core(TM) i7-1255U (1) 64-bit AES VM
+                L2:8.0 MB L3:48.0 MB 4C/4T NUMA:1
+ * MEMORY       1.2/3.6 GB (33%)
+ * DONATE       1%
+ * ASSEMBLY     auto:intel
+ * POOL #1      stratum+tcp://pool.supportxmr.com:3333 algo auto
+ * COMMANDS     hashrate, pause, resume, results, connection
+ * OPENCL       disabled
+ * CUDA         disabled
+[2025-01-21 01:17:53.955]  net      use pool pool.supportxmr.com:3333  141.95.72.61
+[2025-01-21 01:17:53.956]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329996 (102 tx)
+[2025-01-21 01:17:53.956]  cpu      use argon2 implementation AVX2
+[2025-01-21 01:17:53.965]  msr      cannot read MSR 0x000001a4
+[2025-01-21 01:17:53.965]  msr      FAILED TO APPLY MSR MOD, HASHRATE WILL BE LOW
+[2025-01-21 01:17:53.965]  randomx  init dataset algo rx/0 (4 threads) seed 8016fbcab355f742...
+[2025-01-21 01:17:53.994]  randomx  allocated 2336 MB (2080+256) huge pages 11% 128/1168 +JIT (28 ms)
+[2025-01-21 01:17:59.994]  randomx  dataset ready (6000 ms)
+[2025-01-21 01:17:59.994]  cpu      use profile  rx  (4 threads) scratchpad 2048 KB
+[2025-01-21 01:17:59.997]  cpu      READY threads 4/4 (4) huge pages 0% 0/4 memory 8192 KB (3 ms)
+[2025-01-21 01:18:13.477]  cpu      accepted (1/0) diff 50000 (135 ms)
+[2025-01-21 01:18:34.104]  net      new job from pool.supportxmr.com:3333 diff 56250 algo rx/0 height 3329996 (102 tx)
+[2025-01-21 01:18:39.520]  cpu      accepted (2/0) diff 56250 (119 ms)
+[2025-01-21 01:19:00.066]  miner    speed 10s/60s/15m 1364.7 n/a n/a H/s max 1459.6 H/s
+[2025-01-21 01:19:23.794]  net      stratum+tcp://pool.supportxmr.com:3333 read error: "connection reset by peer"
+[2025-01-21 01:19:23.794]  net      no active pools, stop mining
+[2025-01-21 01:19:29.988]  net      use pool pool.supportxmr.com:3333  141.95.72.59
+[2025-01-21 01:19:29.988]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (38 tx)
+[2025-01-21 01:19:36.957]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329997 (39 tx)
 
-vm.nr_hugepages=128
-Ardından ayarları yeniden yüklemek için:
 
-sudo sysctl -p
-Sonuç Kontrolü:
-cat /proc/meminfo | grep HugePages
-Eğer HugePages_Total ve HugePages_Free ayarlarının değerleri doluysa Huge Pages etkinleştirilmiştir.
-
-2. MSR Modülünü Yükleyin
-MSR (Model Specific Register), işlemci ayarlarını optimize eder. XMRig, MSR olmadan performans kaybı yaşayabilir.
-
-Adımlar:
-MSR modülünü etkinleştirin:
-sudo modprobe msr
-Eğer hâlâ hata alıyorsanız, çekirdek modülünü manuel olarak yükleyin:
-sudo apt install msr-tools
-Kalıcı Yapılandırma:
-MSR modülünü her yeniden başlatmada otomatik olarak yüklemek için:
-
-echo "msr" | sudo tee -a /etc/modules
-3. XMRig Ayarlarını Optimize Edin
-Thread Sayısı: CPU çekirdek sayınızın yarısı kadar thread ayarlayın. Daha fazla thread kullanmak performansı düşürebilir.
-
-./xmrig --threads=<çekirdek_sayısı>
-Örneğin, 8 çekirdekli bir CPU için:
-
-./xmrig --threads=4
-Bağlantı Algoritması: En uygun algoritmayı otomatik seçmek için:
-
-./xmrig --algo=rx/0
-Priority ve CPU Affinity Ayarları: Madencilik programının CPU üzerindeki önceliğini artırabilirsiniz:
-
-nice -n -20 ./xmrig
-4. İşlemci Performansını Yükseltin
-CPU Turbo Boost’u Açın: Turbo Boost'u kontrol etmek için BIOS'a gidin ve Turbo Boost seçeneğini etkinleştirin.
-
-Performans Modunu Ayarla: İşlemci güç yönetimini "Performance Mode" olarak ayarlayın:
-
-sudo cpupower frequency-set -g performance
