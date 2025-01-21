@@ -34,4 +34,8 @@ tasaklar
 [2025-01-21 01:03:30.107]  net      new job from pool.supportxmr.com:3333 diff 50000 algo rx/0 height 3329989 (68 tx)
 [2025-01-21 01:03:35.663]  net      new job from pool.supportxmr.com:3333 diff 53550 algo rx/0 height 3329989 (68 tx)
 [2025-01-21 01:03:40.261]  net      new job from pool.supportxmr.com:3333 diff 53550 algo rx/0 height 3329989 (75 tx)
+ht 3329989 (75 tx)
+[2025-01-21 01:03:58.898]  miner    speed 10s/60s/15m 1072.0 n/a n/a H/s max 1349.6 H/s
+[2025-01-21 01:04:58.981]  miner    speed 10s/60s/15m 1424.0 1227.6 n/a H/s max 1424.0 H/s
+
 
