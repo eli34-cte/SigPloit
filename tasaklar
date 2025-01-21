@@ -2,3 +2,24 @@ tasaklar
 curl -O https://blackarch.org/strap.sh
 database file for 'blackarch' does not exist (use '-Sy' to download)
 error: failed to prepare transaction (could not find database
+┌────┤ Daemons using outdated libraries ├─────┐                               
+                              │                                             │                               
+                              │                                             │                               
+                              │ Which services should be restarted?         │                               
+                              │                                             │                               
+                              │  [*] accounts-daemon.service                │                               
+                              │  [*] colord.service                         │                               
+                              │  [ ] dbus.service                           │                               
+                              │  [ ] docker.service                         │                               
+                              │  [ ] getty@tty1.service                     │                               
+                              │  [ ] lightdm.service                        │                               
+                              │  [ ] ModemManager.service                   │                               
+                              │  [ ] NetworkManager.service                 │                               
+                              │  [*] polkit.service                         │                               
+                              │  [*] rtkit-daemon.service                   │                               
+                              │  [ ] systemd-logind.service                 │                               
+                              │  [*] udisks2.service                        │                               
+                              │                                             │                               
+                              │                                             │                               
+                              │          <Ok>              <Cancel>         │                               
+                              │                                        
