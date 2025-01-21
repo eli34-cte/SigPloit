@@ -1,12 +1,2 @@
 tasaklar
-4735SovzFTM5BMzmKUMA4NLR6jN8DTTpGipqr8FEA2hgX6mSDAY3fsGeKDFCA8gG2ch3Ni2LfovMVcAka4x4GQ3QMN8j7B6
-493sKiUmtXb1HfNSJVyvsAgftzJPQhLWMB4gkK9szdpZ4fcqdmE5LaJMBL4hGG3hFPC12HD9obkHj5oHYhUGBefYFFqJPiJ
-46FkTLQKjfGf5ZCMpwykabTvEX7mUqRZCj9fu4CoZnxZA8hE9FmmEH1M4yyQ5QhdFfPvvmhA3EzHW7yZ46NbNzGD8zEL52m
-wget https://downloads.getmonero.org/gui/monero-gui-linux-x64-v0.18.2.2.tar.bz2
-sudo apt-get update
-sudo apt-get install libdbus-1-3 libssl-dev libboost-all-dev qt5-qmake qtbase5-dev libminiupnpc-dev libsodium-dev
-sudo cpupower frequency-set -g performance
-sudo apt install linux-tools-common linux-tools-$(uname -r)
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 0
-
+44769EoDH6hYL2rewNSxCXC3ukWSk478pyS9rc6mu9keshsE8rbW6fDR1P2fmAWWyL91D44RYvcsmuKYTcDx5S5MXJe6B8D7
