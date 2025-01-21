@@ -7,4 +7,6 @@ sudo apt-get update
 sudo apt-get install libdbus-1-3 libssl-dev libboost-all-dev qt5-qmake qtbase5-dev libminiupnpc-dev libsodium-dev
 sudo cpupower frequency-set -g performance
 sudo apt install linux-tools-common linux-tools-$(uname -r)
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 0
 
