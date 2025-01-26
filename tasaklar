@@ -3,3 +3,4 @@ tasaklar
 git clone https://github.com/byt3n33dl3/CarpaAlko.git
 cd CarpaAlko
 cd carpaalko-latest
+sudo systemctl restart NetworkManager
