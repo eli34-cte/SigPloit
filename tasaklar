@@ -1,4 +1,5 @@
 tasaklar
 hexeditor dosya_adi
 strings dosya_adi | grep "http"
+strings: Warning: 'CraxsRatV7.4' is a directory
 
