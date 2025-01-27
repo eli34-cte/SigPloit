@@ -1,10 +1,4 @@
 tasaklar
-44769EoDH6hYL2rewNSxCXC3ukWSk478pyS9rc6mu9keshsE8rbW6fDR1P2fmAWWyL91D44RYvcsmuKYTcDx5S5MXJe6B8D7
-git clone https://github.com/byt3n33dl3/CarpaAlko.git
-cd CarpaAlko
-cd carpaalko-latest
-sudo systemctl restart NetworkManager
-$ cd 69phisher
-$ chmod 777 69phisher.sh
-$ bash 69phisher.sh
-$ git clone https://github.com/Akshay-Arjun/69phisher.git
+hexeditor dosya_adi
+strings dosya_adi | grep "http"
+
