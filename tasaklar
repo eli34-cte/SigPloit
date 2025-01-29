@@ -2,4 +2,14 @@ tasaklar
 hexeditor dosya_adi
 strings dosya_adi | grep "http"
 strings: Warning: 'CraxsRatV7.4' is a directory
+echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> ~/.bashrc
+echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bashrc
+source ~/.bashrc
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+git clone https://github.com/SigPloiter/SigPloit.git
+cd SigPloit
+sudo apt update && sudo apt upgrade -y
+sudo apt install git python3 python3-pip openjdk-11-jdk -y
+
 
