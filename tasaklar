@@ -1,22 +1,52 @@
 tasaklar
-sudo ln -s /usr/local/bin/pip2 /usr/bin/pip2
-DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.                                  
-Defaulting to user installation because normal site-packages is not writeable
-Collecting colorama>=0.3.9
-  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
-Collecting pyfiglet>=0.7.5
-  Using cached pyfiglet-0.8.post1-py2.py3-none-any.whl (865 kB)
-Collecting termcolor>=1.1.0
-  Using cached termcolor-1.1.0.tar.gz (3.9 kB)
-    ERROR: Command errored out with exit status 1:
-     command: /usr/bin/python2 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-KoMwwd/termcolor/setup.py'"'"'; __file__='"'"'/tmp/pip-install-KoMwwd/termcolor/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-gETXKP            
-         cwd: /tmp/pip-install-KoMwwd/termcolor/                                                         
-    Complete output (6 lines):                                                                           
-    usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]                                
-       or: setup.py --help [cmd1 cmd2 ...]                                                               
-       or: setup.py --help-commands                                                                      
-       or: setup.py cmd --help                                                                           
-                                                                                                         
-    error: invalid command 'egg_info'                                                                    
-    ----------------------------------------                                                             
-ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+sudo apt update && sudo apt upgrade -y
+sudo apt install python2 -y
+Şimdi kontrol et:
+
+bash
+Copy
+Edit
+python2 --version
+Eğer versiyon numarası (örneğin Python 2.7.18) çıkıyorsa, Python 2 sorunsuz çalışıyor demektir.
+
+✅ Adım 2: Pip2'yi Manuel Yükle
+Python 2 için pip2'yi şu şekilde yükleyelim:
+
+bash
+Copy
+Edit
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+python2 get-pip.py --user
+Şimdi pip2'nin yüklendiğini kontrol edelim:
+
+bash
+Copy
+Edit
+~/.local/bin/pip2 --version
+Eğer çıktı alabiliyorsan (pip 20.3.4 gibi), pip2 sorunsuz yüklenmiştir.
+
+Bunu sistemde tanımlı hale getirelim:
+
+bash
+Copy
+Edit
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+Şimdi pip2'yi her yerden kullanabilirsin! 🚀
+
+✅ Adım 3: SigPloit Bağımlılıklarını Yükle
+Şimdi SigPloit klasörüne gidip gerekli bağımlılıkları yükleyelim:
+
+bash
+Copy
+Edit
+cd SigPloit
+pip2 install --user -r requirements.txt
+✅ Adım 4: SigPloit'i Çalıştır
+Son olarak SigPloit'i çalıştır:
+
+bash
+Copy
+Edit
+python2 sigploit.py
+🚀 Artık SigPloit'i kullanabilirsin! Eğer başka hata alırsan bana bildir. 😎
