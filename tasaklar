@@ -11,5 +11,25 @@ git clone https://github.com/SigPloiter/SigPloit.git
 cd SigPloit
 sudo apt update && sudo apt upgrade -y
 sudo apt install git python3 python3-pip openjdk-11-jdk -y
+sudo apt update && sudo apt upgrade -y
+sudo apt install python2 lksctp-tools -y
+sudo apt install python2
+2️⃣ Pip2 Kurulumu
+Kali’de bazen pip2 bulunmaz, aşağıdaki komutlarla yükleyebilirsin:
 
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+python2 get-pip.py
+3️⃣ SigPloit'i İndir
+GitHub'dan SigPloit'i indir:
+
+git clone https://github.com/SigPloiter/SigPloit.git
+cd SigPloit
+4️⃣ Gerekli Kütüphaneleri Kur
+Şimdi SigPloit için gerekli Python kütüphanelerini yükleyelim:
+
+sudo pip2 install -r requirements.txt
+5️⃣ SigPloit'i Çalıştır
+Şimdi SigPloit’i çalıştırabilirsin:
+
+python2 sigploit.py
 
