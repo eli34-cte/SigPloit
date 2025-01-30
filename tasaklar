@@ -1,2 +1,3 @@
 tasaklar
 python2 -m pip install --upgrade "pip<21.0" --user
+pip2 install --user colorama pyfiglet termcolor
