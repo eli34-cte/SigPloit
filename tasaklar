@@ -32,4 +32,36 @@ sudo pip2 install -r requirements.txt
 Şimdi SigPloit’i çalıştırabilirsin:
 
 python2 sigploit.py
+udo apt install python2 curl -y
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+python2 get-pip.py
+3️⃣ pip2’nin başarıyla yüklendiğini kontrol et:
 
+bash
+Copy
+Edit
+pip2 --version
+Eğer versiyon numarası çıkıyorsa sorun çözülmüştür ✅
+
+🚀 SigPloit'i Tekrar Kur ve Çalıştır
+Şimdi SigPloit için gerekli bağımlılıkları tekrar yükle:
+
+bash
+Copy
+Edit
+cd SigPloit
+pip2 install -r requirements.txt
+python2 sigploit.py
+⚠️ Hala Çalışmıyorsa?
+Eğer hala "pip2 bulunamadı" hatası alıyorsan:
+
+bash
+Copy
+Edit
+sudo ln -s /usr/local/bin/pip2 /usr/bin/pip2
+Sonra tekrar çalıştır:
+
+bash
+Copy
+Edit
+pip2 --version
