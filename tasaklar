@@ -1,22 +1,16 @@
 tasaklar
-python2 -m pip install --upgrade "pip<21.0" --user
+pip2 install --user setuptools==44.1.1 wheel
+pip2 install --user setuptools==44.1.1 wheel
+Eğer yukarıdaki komut hata verirse, manuel olarak indirip yükleyelim:
+
+wget https://files.pythonhosted.org/packages/source/s/setuptools/setuptools-44.1.1.tar.gz
+tar -xvzf setuptools-44.1.1.tar.gz
+cd setuptools-44.1.1
+python2 setup.py install --user
+Bu işlem tamamlandıktan sonra tekrar deneyelim:
+
 pip2 install --user colorama pyfiglet termcolor
-EPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.                                                  
-Collecting colorama>=0.3.9
-  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
-Collecting pyfiglet>=0.7.5
-  Using cached pyfiglet-0.8.post1-py2.py3-none-any.whl (865 kB)
-Collecting termcolor>=1.1.0
-  Using cached termcolor-1.1.0.tar.gz (3.9 kB)
-    ERROR: Command errored out with exit status 1:
-     command: /usr/bin/python2 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-fQp86V/termcolor/setup.py'"'"'; __file__='"'"'/tmp/pip-install-fQp86V/termcolor/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-4xqweG                            
-         cwd: /tmp/pip-install-fQp86V/termcolor/                                                             
-    Complete output (6 lines):                                                                               
-    usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]                                    
-       or: setup.py --help [cmd1 cmd2 ...]                                                                   
-       or: setup.py --help-commands                                                                          
-       or: setup.py cmd --help                                                                               
-                                                                                                             
-    error: invalid command 'egg_info'                                                                        
-    ----------------------------------------                                                                 
-ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+Şimdi SigPloit’i tekrar çalıştır:
+
+cd ~/SigPloit
+python2 sigploit.py
