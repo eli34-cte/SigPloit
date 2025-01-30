@@ -1,52 +1,17 @@
 tasaklar
-sudo apt update && sudo apt upgrade -y
-sudo apt install python2 -y
-Şimdi kontrol et:
-
-bash
-Copy
-Edit
-python2 --version
-Eğer versiyon numarası (örneğin Python 2.7.18) çıkıyorsa, Python 2 sorunsuz çalışıyor demektir.
-
-✅ Adım 2: Pip2'yi Manuel Yükle
-Python 2 için pip2'yi şu şekilde yükleyelim:
-
-bash
-Copy
-Edit
-wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py -O get-pip.py
 python2 get-pip.py --user
-Şimdi pip2'nin yüklendiğini kontrol edelim:
-
-bash
-Copy
-Edit
 ~/.local/bin/pip2 --version
-Eğer çıktı alabiliyorsan (pip 20.3.4 gibi), pip2 sorunsuz yüklenmiştir.
-
-Bunu sistemde tanımlı hale getirelim:
-
-bash
-Copy
-Edit
 echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
-Şimdi pip2'yi her yerden kullanabilirsin! 🚀
+Bu komutlar sayesinde artık pip2’yi her yerden çalıştırabilirsin.
 
-✅ Adım 3: SigPloit Bağımlılıklarını Yükle
-Şimdi SigPloit klasörüne gidip gerekli bağımlılıkları yükleyelim:
+Pip2'nin doğru yüklendiğini bir kez daha kontrol et:
 
-bash
-Copy
-Edit
+pip2 --version
+git clone https://github.com/SigPloiter/SigPloit.git
 cd SigPloit
 pip2 install --user -r requirements.txt
-✅ Adım 4: SigPloit'i Çalıştır
-Son olarak SigPloit'i çalıştır:
+SigPloit’i Çalıştır:
 
-bash
-Copy
-Edit
 python2 sigploit.py
-🚀 Artık SigPloit'i kullanabilirsin! Eğer başka hata alırsan bana bildir. 😎
