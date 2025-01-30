@@ -1,17 +1,1 @@
 tasaklar
-wget https://bootstrap.pypa.io/pip/2.7/get-pip.py -O get-pip.py
-python2 get-pip.py --user
-~/.local/bin/pip2 --version
-echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
-Bu komutlar sayesinde artık pip2’yi her yerden çalıştırabilirsin.
-
-Pip2'nin doğru yüklendiğini bir kez daha kontrol et:
-
-pip2 --version
-git clone https://github.com/SigPloiter/SigPloit.git
-cd SigPloit
-pip2 install --user -r requirements.txt
-SigPloit’i Çalıştır:
-
-python2 sigploit.py
