@@ -1,44 +1,48 @@
 tasaklar
-colorama>=0.3.9
-pyfiglet>=0.7.5
-termcolor>=1.1.0
-configobj>=5.0.6
-IPy>=0.83
-pysctp>=0.6
-GPT Icon
-Güzel, requirements.txt içeriğini paylaştığın için teşekkürler! 🚀
-
-Şimdi, bu paketleri Python 2'de çalıştırabilmek için düzelteceğiz. Çünkü bazı paketlerin güncel sürümleri artık Python 2 ile uyumlu değil.
-
-✅ Düzeltilmiş requirements.txt (Python 2 için)
-Bu dosyayı yeni bir requirements_fixed.txt olarak kaydedip kullanabilirsin.
-
-colorama==0.3.9
-pyfiglet==0.7.5
-termcolor==1.1.0
-configobj==5.0.6
-IPy==0.83
-pysctp==0.6
-📌 Sürüm numaralarını sabitledim, çünkü yeni sürümler Python 2 ile çalışmaz.
-
-✅ Güncellenmiş Kurulum Adımları
-Eğer hala pip2 sorun çıkarıyorsa, şu adımları takip et:
-
-1️⃣ Python 2 için eski pip sürümünü yükle
-
-python2 -m pip install --upgrade "pip<21.0" --user
-2️⃣ Eksik modülleri yükle
-
-pip2 install --user -r requirements_fixed.txt
-3️⃣ Her şey sorunsuz yüklendiyse, kontrol et
-
-pip2 list
-Burada colorama, pyfiglet, termcolor vb. paketlerin listelendiğini görmelisin.
-
-🔥 Hata Alırsan?
-Eğer pysctp veya başka bir modül hata verirse, elle yüklemeyi deneyebilirsin:
-
-pip2 install --user pysctp==0.6
-💀 pysctp derleme hatası verirse, şu komutu çalıştırarak SCTP kütüphanesini yükle:
-
-sudo apt install lksctp-tools
+ ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python2 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-v5dgYj/pysctp/setup.py'"'"'; __file__='"'"'/tmp/pip-install-v5dgYj/pysctp/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-pHs0Hv                                                 
+       cwd: /tmp/pip-install-v5dgYj/pysctp/                                                                   
+  Complete output (15 lines):                                                                                 
+  running bdist_wheel                                                                                         
+  running build                                                                                               
+  running build_py                                                                                            
+  creating build                                                                                              
+  creating build/lib.linux-x86_64-2.7                                                                         
+  copying sctp.py -> build/lib.linux-x86_64-2.7                                                               
+  running build_ext                                                                                           
+  building '_sctp' extension                                                                                  
+  creating build/temp.linux-x86_64-2.7                                                                        
+  x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -ffile-prefix-map=/build/python2.7-8IS1Qc/python2.7-2.7.18=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I. -I/usr/include -I/usr/include/python2.7 -c _sctp.c -o build/temp.linux-x86_64-2.7/_sctp.o                        
+  _sctp.c:8:10: fatal error: Python.h: No such file or directory                                              
+      8 | #include <Python.h>                                                                                 
+        |          ^~~~~~~~~~                                                                                 
+  compilation terminated.                                                                                     
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1                                             
+  ----------------------------------------                                                                    
+  ERROR: Failed building wheel for pysctp
+  Running setup.py clean for pysctp
+Successfully built pyfiglet termcolor configobj IPy
+Failed to build pysctp
+Installing collected packages: colorama, pyfiglet, termcolor, six, configobj, IPy, pysctp
+    Running setup.py install for pysctp ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python2 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-v5dgYj/pysctp/setup.py'"'"'; __file__='"'"'/tmp/pip-install-v5dgYj/pysctp/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-5jRLBG/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/kali/.local/include/python2.7/pysctp           
+         cwd: /tmp/pip-install-v5dgYj/pysctp/                                                                 
+    Complete output (15 lines):                                                                               
+    running install                                                                                           
+    running build                                                                                             
+    running build_py                                                                                          
+    creating build                                                                                            
+    creating build/lib.linux-x86_64-2.7                                                                       
+    copying sctp.py -> build/lib.linux-x86_64-2.7                                                             
+    running build_ext                                                                                         
+    building '_sctp' extension                                                                                
+    creating build/temp.linux-x86_64-2.7                                                                      
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -ffile-prefix-map=/build/python2.7-8IS1Qc/python2.7-2.7.18=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I. -I/usr/include -I/usr/include/python2.7 -c _sctp.c -o build/temp.linux-x86_64-2.7/_sctp.o                      
+    _sctp.c:8:10: fatal error: Python.h: No such file or directory                                            
+        8 | #include <Python.h>                                                                               
+          |          ^~~~~~~~~~                                                                               
+    compilation terminated.                                                                                   
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1                                           
+    ----------------------------------------                                                                  
+ERROR: Command errored out with exit status 1: /usr/bin/python2 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-v5dgYj/pysctp/setup.py'"'"'; __file__='"'"'/tmp/pip-install-v5dgYj/pysctp/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-5jRLBG/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/kali/.local/include/python2.7/pysctp Check the logs for full command output.
