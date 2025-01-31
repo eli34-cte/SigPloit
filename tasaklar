@@ -1,32 +1,7 @@
 tasaklar
-pip2 install --user setuptools==44.1.1 wheel
-pip2 install --user setuptools==44.1.1 wheel
-Eğer yukarıdaki komut hata verirse, manuel olarak indirip yükleyelim:
-
-wget https://files.pythonhosted.org/packages/source/s/setuptools/setuptools-44.1.1.tar.gz
-tar -xvzf setuptools-44.1.1.tar.gz
-cd setuptools-44.1.1
-python2 setup.py install --user
-Bu işlem tamamlandıktan sonra tekrar deneyelim:
-
-pip2 install --user colorama pyfiglet termcolor
-Şimdi SigPloit’i tekrar çalıştır:
-
-cd ~/SigPloit
-python2 sigploit.py
---2025-01-30 05:06:05--  https://files.pythonhosted.org/packages/source/s/setuptools/setuptools-44.1.1.tar.gz
-Resolving files.pythonhosted.org (files.pythonhosted.org)... 151.101.192.223, 151.101.128.223, 151.101.64.223, ...
-Connecting to files.pythonhosted.org (files.pythonhosted.org)|151.101.192.223|:443... connected.
-HTTP request sent, awaiting response... 404 Not Found
-2025-01-30 05:06:06 ERROR 404: Not Found.
-
-tar (child): setuptools-44.1.1.tar.gz: Cannot open: No such file or directory
-tar (child): Error is not recoverable: exiting now
-tar: Child returned status 2
-tar: Error is not recoverable: exiting now
-cd: no such file or directory: setuptools-44.1.1
-python2: can't open file 'setup.py': [Errno 2] No such file or directory
-git clone https://github.com/nyx0/SCTPmap.git
-cd SCTPmap
-pip3 install -r requirements.txt
-python3 sctpmap.py
+colorama>=0.3.9
+pyfiglet>=0.7.5
+termcolor>=1.1.0
+configobj>=5.0.6
+IPy>=0.83
+pysctp>=0.6
