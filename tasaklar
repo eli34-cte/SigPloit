@@ -5,3 +5,40 @@ termcolor>=1.1.0
 configobj>=5.0.6
 IPy>=0.83
 pysctp>=0.6
+GPT Icon
+Güzel, requirements.txt içeriğini paylaştığın için teşekkürler! 🚀
+
+Şimdi, bu paketleri Python 2'de çalıştırabilmek için düzelteceğiz. Çünkü bazı paketlerin güncel sürümleri artık Python 2 ile uyumlu değil.
+
+✅ Düzeltilmiş requirements.txt (Python 2 için)
+Bu dosyayı yeni bir requirements_fixed.txt olarak kaydedip kullanabilirsin.
+
+colorama==0.3.9
+pyfiglet==0.7.5
+termcolor==1.1.0
+configobj==5.0.6
+IPy==0.83
+pysctp==0.6
+📌 Sürüm numaralarını sabitledim, çünkü yeni sürümler Python 2 ile çalışmaz.
+
+✅ Güncellenmiş Kurulum Adımları
+Eğer hala pip2 sorun çıkarıyorsa, şu adımları takip et:
+
+1️⃣ Python 2 için eski pip sürümünü yükle
+
+python2 -m pip install --upgrade "pip<21.0" --user
+2️⃣ Eksik modülleri yükle
+
+pip2 install --user -r requirements_fixed.txt
+3️⃣ Her şey sorunsuz yüklendiyse, kontrol et
+
+pip2 list
+Burada colorama, pyfiglet, termcolor vb. paketlerin listelendiğini görmelisin.
+
+🔥 Hata Alırsan?
+Eğer pysctp veya başka bir modül hata verirse, elle yüklemeyi deneyebilirsin:
+
+pip2 install --user pysctp==0.6
+💀 pysctp derleme hatası verirse, şu komutu çalıştırarak SCTP kütüphanesini yükle:
+
+sudo apt install lksctp-tools
