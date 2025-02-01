@@ -1,28 +1,20 @@
 tasaklar
-sudo apt update
-sudo apt install python2-dev python2.7-dev gcc lksctp-tools libsctp-dev -y
-pip2 install --no-cache-dir --user pysctp
-pip2 install --user --no-binary :all: pysctp
-Bu komut, pysctp modülünü kaynak kodundan derleyerek yükler.
-
-✅ 3️⃣ pysctp Doğru Yüklendi mi Kontrol Et
-Kurulum tamamlandıktan sonra şu komutu çalıştır:
-
-bash
-Copy
-Edit
-python2 -c "import sctp; print('pysctp çalışıyor!')"
-Eğer "pysctp çalışıyor!" mesajını görüyorsan, artık her şey hazır! 🚀
-
-❌ Haleşişmansa?
-Eğer hala aynı hata alıyorsan, şu komutu çalıştırarak tam hata mesajını paylaş:
-
-bash
-Copy
-Edit
-pip2 install --verbose --user pysctp
-Sonucu paylaş, en ince detayına kadar çözelim! 😎🔥
-
+raceback (most recent call last):
+  File "sigploit.py", line 16, in <module>
+    from ss7.tracking import *
+  File "/home/kali/SigPloit/ss7/tracking.py", line 14, in <module>
+    import sigploit
+  File "/home/kali/SigPloit/sigploit.py", line 21, in <module>
+    from gtpmain import *
+  File "/home/kali/SigPloit/gtpmain.py", line 12, in <module>
+    import gtp.info
+  File "/home/kali/SigPloit/gtp/info.py", line 18, in <module>
+    from attacks.info import discover_gtp_nodes
+  File "/home/kali/SigPloit/gtp/attacks/info/discover_gtp_nodes.py", line 39, in <module>
+    from gtp_v2_core.utilities.configuration_parser import parseConfigs
+  File "/home/kali/SigPloit/gtp/gtp_v2_core/utilities/configuration_parser.py", line 38, in <module>
+    from configobj import ConfigObj, ConfigObjError
+ImportError: No module named configobj
 
 
 
