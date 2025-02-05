@@ -6,6 +6,6 @@ sudo apt install python2 python2-dev -y
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
 python2 get-pip.py --user
 
-
-
+sudo sed -i 's|http://http.kali.org/kali|http://mirror.foobar.fi/kali|g' /etc/apt/sources.list
+sudo apt update
 
