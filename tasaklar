@@ -8,4 +8,6 @@ python2 get-pip.py --user
 
 sudo sed -i 's|http://http.kali.org/kali|http://mirror.foobar.fi/kali|g' /etc/apt/sources.list
 sudo apt update
-
+Warning: Conflicting distribution: file:/run/live/medium kali-last-snapshot Release (expected kali-last-snapshot but got kali-rolling)
+Warning: Failed to fetch http://mirror.foobar.fi/kali/dists/kali-rolling/InRelease  Could not resolve 'mirror.foobar.fi'
+Warning: Some index files failed to download. They have been ignored, or old ones used instead.
