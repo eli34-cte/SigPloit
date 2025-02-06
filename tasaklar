@@ -13,3 +13,6 @@ gzip -d ~/rockyou.txt.gz
 Daha sonra wordlist'i tekrar orijinal yerine koyabilirsin:
 
 sudo mv ~/rockyou.txt /usr/share/wordlists/
+wget https://github.com/praetorian-code/Hob0Rules/raw/master/wordlists/rockyou.txt.gz
+gzip -d rockyou.txt.gz
+mv rockyou.txt /usr/share/wordlists/
