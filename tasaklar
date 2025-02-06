@@ -1,18 +1,10 @@
 taskalar
 sudo chmod 644 /usr/share/wordlists/rockyou.txt.gz
-sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
-Veya tamamen sahipliği değiştirerek şu komutu kullanabilirsin:
-
-sudo chown $USER:$USER /usr/share/wordlists/rockyou.txt.gz
-gzip -d /usr/share/wordlists/rockyou.txt.gz
-🔹 3. Alternatif Yöntem: Dosyayı Başka Bir Dizine Kopyala ve Aç
-Eğer hala sorun yaşarsan, dosyayı kendi dizinine kopyalayıp orada açmayı deneyebilirsin:
-
-cp /usr/share/wordlists/rockyou.txt.gz ~/
-gzip -d ~/rockyou.txt.gz
-Daha sonra wordlist'i tekrar orijinal yerine koyabilirsin:
-
-sudo mv ~/rockyou.txt /usr/share/wordlists/
-wget https://github.com/praetorian-code/Hob0Rules/raw/master/wordlists/rockyou.txt.gz
-gzip -d rockyou.txt.gz
-mv rockyou.txt /usr/share/wordlists/
+sTraceback (most recent call last):
+  File "/home/kali/SocialMediaHackingToolkit/cmd/main.py", line 25, in <module>
+    insta_bruteforce(username, wordlist, vpn)
+  File "/home/kali/SocialMediaHackingToolkit/cmd/utils.py", line 133, in insta_bruteforce
+    wl_lines = [line.strip() for line in wl_file.readlines()]  # Rimuovi i caratteri di nuova riga
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf1 in position 923: invalid continuation byte
