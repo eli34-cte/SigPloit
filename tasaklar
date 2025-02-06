@@ -1,4 +1,15 @@
-tasaklar 
-sudo cp /usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt.tar.gz /usr/share/wordlists/
-cd /usr/share/wordlists/
-sudo tar -xvf rockyou.txt.tar.gz
+taskalar
+sudo chmod 644 /usr/share/wordlists/rockyou.txt.gz
+sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
+Veya tamamen sahipliği değiştirerek şu komutu kullanabilirsin:
+
+sudo chown $USER:$USER /usr/share/wordlists/rockyou.txt.gz
+gzip -d /usr/share/wordlists/rockyou.txt.gz
+🔹 3. Alternatif Yöntem: Dosyayı Başka Bir Dizine Kopyala ve Aç
+Eğer hala sorun yaşarsan, dosyayı kendi dizinine kopyalayıp orada açmayı deneyebilirsin:
+
+cp /usr/share/wordlists/rockyou.txt.gz ~/
+gzip -d ~/rockyou.txt.gz
+Daha sonra wordlist'i tekrar orijinal yerine koyabilirsin:
+
+sudo mv ~/rockyou.txt /usr/share/wordlists/
