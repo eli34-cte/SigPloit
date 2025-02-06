@@ -7,3 +7,4 @@ raceback (most recent call last):
                                          ^^^^^^^^^^^^^^^^^^^
   File "<frozen codecs>", line 322, in decode
 UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf1 in position 933: invalid continuation byte
+/home/kali/SocialMediaHackingToolkit/wordlist/rockyou.txt: text/plain; charset=utf-8
