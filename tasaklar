@@ -1,30 +1,11 @@
 taskalar
 
-https://github.com/XDeadHackerX/The_spy_job
-
-493sKiUmtXb1HfNSJVyvsAgftzJPQhLWMB4gkK9szdpZ4fcqdmE5LaJMBL4hGG3hFPC12HD9obkHj5oHYhUGBefYFFqJPiJ
 
 
-[*] Usuario: @meryyemm10
-cat: requisitos/resultados/Ig-meryyemm10.txt: No such fi
-[*] Nombre: 
-cat: requisitos/resultados/Ig-meryyemm10.txt: No such fi
-[*] Descripcion: 
-cat: requisitos/resultados/Ig-meryyemm10.txt: No such fi
-[*] Posts: 
-cat: requisitos/resultados/Ig-meryyemm10.txt: No such fi
-[*] Seguidores: 
-cat: requisitos/resultados/Ig-meryyemm10.txt: No such fi
-[*] Siguiendo: 
-cat: requisitos/resultados/Ig-meryyemm10.txt: No such fi
-[*] Estado de la cuenta(Vacio = Publica): 
+/home/kali/Downloads/suicide.py:1816: SyntaxWarning: invalid escape sequence '\ '
+  print(Colorate.Vertical(Colors.cyan_to_red,"""
+Traceback (most recent call last):
+  File "/home/kali/Downloads/suicide.py", line 5, in <module>                                                   
+    import pystyle
+ModuleNotFoundError: No module named 'pystyle'
 
-cat: requisitos/resultados/Ig-meryyemm10.txt: No such fi
-[*] Foto de Perfil: 
-
-[*] URL Perfil: https://www.instagram.com/meryyemm10
-
-Abriendo Navegador....
-
-Running Firefox as root in a regular user's session is n is owned by kali.)
-Running Firefox as root in a regular user's session is n is owned by kali.)
