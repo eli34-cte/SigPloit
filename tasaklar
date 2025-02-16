@@ -1,12 +1,27 @@
 taskalar
+Error: Unable to locate package pip2
+error: externally-managed-environment
 
-ec:46:2c:d2:65:81
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Kali-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have pypy3-venv installed.
+    
+    If you wish to install a non-Kali-packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    For more information, refer to the following:
+    * https://www.kali.org/docs/general-use/python3-external-packages/
+    * /usr/share/doc/python3.13/README.venv
 
-
-/home/kali/Downloads/suicide.py:1816: SyntaxWarning: invalid escape sequence '\ '
-  print(Colorate.Vertical(Colors.cyan_to_red,"""
-Traceback (most recent call last):
-  File "/home/kali/Downloads/suicide.py", line 5, in <module>                                                   
-    import pystyle
-ModuleNotFoundError: No module named 'pystyle'
-
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+Install.sh: line 19: pip2: command not found
+Install.sh: line 22: cd: AllHackingTools: No such file or directory
+python2: can't open file 'src/InstallMenu.py': [Errno 2] No such file or directory
