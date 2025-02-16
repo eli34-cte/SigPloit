@@ -1,27 +1,81 @@
 taskalar
-Error: Unable to locate package pip2
-error: externally-managed-environment
+sudo apt update
+sudo apt install python2
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+sudo python2 get-pip.py
+b) Python 2 Sanal Ortamı Oluşturma:
+bash
+Copy
+sudo apt install python2-virtualenv
+virtualenv --python=python2 myenv2
+source myenv2/bin/activate
+pip install <paket_adı>
+2. Python 3 ve Sanal Ortam Kullanımı
+Python 3 kullanmanız önerilir. Aşağıdaki adımlarla bir sanal ortam oluşturabilir ve pip kullanabilirsiniz:
 
-× This environment is externally managed
-╰─> To install Python packages system-wide, try apt install
-    python3-xyz, where xyz is the package you are trying to
-    install.
-    
-    If you wish to install a non-Kali-packaged Python package,
-    create a virtual environment using python3 -m venv path/to/venv.
-    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
-    sure you have pypy3-venv installed.
-    
-    If you wish to install a non-Kali-packaged Python application,
-    it may be easiest to use pipx install xyz, which will manage a
-    virtual environment for you. Make sure you have pipx installed.
-    
-    For more information, refer to the following:
-    * https://www.kali.org/docs/general-use/python3-external-packages/
-    * /usr/share/doc/python3.13/README.venv
+a) Python 3 ve pip Kurulumu:
+bash
+Copy
+sudo apt update
+sudo apt install python3 python3-pip python3-venv
+b) Sanal Ortam Oluşturma:
+bash
+Copy
+python3 -m venv myenv
+source myenv/bin/activate
+c) Sanal Ortamda Paket Kurma:
+bash
+Copy
+pip install <paket_adı>
+3. pipx ile Python Uygulamaları Kurma
+Eğer bir Python uygulamasını sistem genelinde kurmak istiyorsanız, pipx kullanabilirsiniz:
 
-note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
-hint: See PEP 668 for the detailed specification.
-Install.sh: line 19: pip2: command not found
-Install.sh: line 22: cd: AllHackingTools: No such file or directory
+a) pipx Kurulumu:
+bash
+Copy
+sudo apt install pipx
+pipx ensurepath
+b) Uygulama Kurma:
+bash
+Copy
+pipx install <uygulama_adı>
+4. Hata Mesajındaki Diğer Sorunlar
+Hata mesajınızda ayrıca şu sorunlar var:
+
+a) AllHackingTools Dizini Bulunamıyor:
+bash
+Copy
+cd: AllHackingTools: No such file or directory
+Bu, AllHackingTools dizininin mevcut olmadığını gösterir. Dizini doğru konumda oluşturun veya komut dosyasını düzeltin.
+
+b) src/InstallMenu.py Dosyası Bulunamıyor:
+bash
+Copy
 python2: can't open file 'src/InstallMenu.py': [Errno 2] No such file or directory
+Bu, src/InstallMenu.py dosyasının bulunamadığını gösterir. Dosyanın doğru konumda olduğundan emin olun veya komut dosyasını düzeltin.
+
+5. Örnek Çözüm
+Aşağıda, Python 3 ve sanal ortam kullanarak bir örnek verilmiştir:
+
+bash
+Copy
+# Gerekli paketleri kur
+sudo apt update
+sudo apt install python3 python3-pip python3-venv
+
+# Sanal ortam oluştur
+python3 -m venv myenv
+source myenv/bin/activate
+
+# Gerekli paketleri kur
+pip install requests
+
+# AllHackingTools dizinini oluştur ve içine gir
+mkdir AllHackingTools
+cd AllHackingTools
+
+# InstallMenu.py dosyasını oluştur veya taşı
+echo "print('InstallMenu.py çalıştı')" > src/InstallMenu.py
+
+# InstallMenu.py'yi çalıştır
+python3 src/InstallMenu.py
