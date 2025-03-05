@@ -1,4 +1,3 @@
-taskalar
-sudo mv /var/lib/dpkg/status /var/lib/dpkg/status.old
-sudo touch /var/lib/dpkg/status
-sudo dpkg --configure -a
+tasaklar
+sudo apt clean && sudo apt autoclean
+sudo apt update && sudo apt upgrade -y
