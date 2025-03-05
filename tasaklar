@@ -1,3 +1,4 @@
 taskalar
 1222 packages can be upgraded. Run 'apt list --upgradabl
 Error: Invalid operation upgard
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
