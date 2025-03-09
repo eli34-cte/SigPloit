@@ -2,3 +2,9 @@ tasaklar
 bc1q0qzd73r22ums28xy2xrlzlxych3r5lcku0yn4q
 sk-5abb42ee594b4e4b89c6777f20abcc80
 7560522435:AAFT9MHqds-2v2ugdgO4cDxycLpZMNvEbj0
+masm atm_final.asm;
+link atm_final.obj;
+
+mount c: C:\path\to\your\directory
+c:
+atm_final.exe
