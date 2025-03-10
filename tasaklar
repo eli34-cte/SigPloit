@@ -1,6 +1,7 @@
 tasaklar
- cp masm611.zip ~/masm
-cp: cannot stat 'masm611.zip': No such file or directory
+nasm -f elf32 atm_final.asm -o atm_final.o
+ld -m elf_i386 atm_final.o -o atm_final
+./atm_final
 
 
 
