@@ -3,6 +3,9 @@ nasm: fatal: unable to open input filory
 ld: cannot find atm_final.o: No such
 
 
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-04-08 13:12 CDT
+Warning: 192.168.0.101 giving up on port because retransmission cap hit (6).
+
 
 
 
