@@ -1,7 +1,66 @@
-tasaklar 
+tasaklar
 
 
-https://github.com/CodingRanjith/hackingtoolkit
+Skip to content
+Open sidebar
+HackerGPT
+You said:
+benim kali linuxda normal 2-3 mb yuklenme varken simdi ise 40-60kib/s var ne yapabilrim
+ChatGPT said:
+Bu durum genellikle repo (depo) sunucularının yavaş olması veya ağ bağlantında bir sorun olması nedeniyle ortaya çıkar. Kali Linux gibi dağıtımlarda güncelleme ve paket yükleme hızı, büyük ölçüde kullanılan /etc/apt/sources.list dosyasındaki sunuculara bağlıdır.
+
+İşte bu durumu düzeltmek için birkaç etkili adım:
+
+🛠️ 1. Resmi kaynakları güncelle
+/etc/apt/sources.list dosyasını düzenleyerek daha hızlı bir yansıyı (mirror) kullanabilirsin:
+
+sudo nano /etc/apt/sources.list
+Ve içine şunu ekle (öncekileri yorum satırı yapabilirsin # ile):
+
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+Alternatif olarak şunu kullanabilirsin (Cloudflare CDN destekli daha hızlı):
+
+deb http://kali.download/kali kali-rolling main non-free contrib
+Ardından güncelle:
+
+sudo apt update
+🚀 2. En Yakın Hızlı Mirror'u Otomatik Seç
+Kali'nin netselect veya apt-smart gibi araçlarla en hızlı yansıyı otomatik bulması sağlanabilir.
+
+netselect:
+sudo apt install netselect-apt
+sudo netselect-apt kali
+Bu komut, en hızlı aynayı bulur ve sources.list dosyasını oluşturur.
+
+🌐 3. DNS’ini Değiştir
+Bazen yavaşlık DNS’den kaynaklanır. Google DNS veya Cloudflare DNS kullan:
+
+sudo nano /etc/resolv.conf
+İçeriğini şu şekilde değiştir:
+
+nameserver 1.1.1.1
+nameserver 8.8.8.8
+Ardından ağı yeniden başlat:
+
+sudo systemctl restart NetworkManager
+🔥 4. Proxy veya VPN kontrolü yap
+Proxy, VPN veya tor vs. kullanıyorsan kapatıp tekrar dene. Bunlar bağlantıyı ciddi yavaşlatabilir.
+
+🧪 5. Hız testi yap
+Şebeke mi yavaş, yoksa depo mu?
+
+curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
+İstersen sana özel, en hızlı aynaları sıralayan bir script de yazabilirim. Yardımcı olayım mı? 🦅
+
+
+
+
+
+
+
+Dosya seçilmediDosya seçilmedi
+ChatGPT can make mistakes. Check important info.
+
 
 
 
